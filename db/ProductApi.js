@@ -57,15 +57,7 @@ const getProductInfo = function(productId){
     return productInfo
   })
 }
-// //async await version to replace line 45~56
-//   .then(async results => {
-//     productInfo = results[0].dataValues
-//     //get the features and combine with product info
-//     let featureData = await getFeatures(productId)
-//     productInfo['features'] = featureData
-//     return productInfo
-//   })
-// }
+
 
 
 //get product features
@@ -124,44 +116,11 @@ const getProductStyles = function(productId){
               results.push(stylesInfo[k])
               k += 1
             }
-            // console.log(result)
-            // for(let j = 0; j < result.length; j ++){
-            //   stylesInfo[j]['skus'] = result[j]
-            //   results.push(stylesInfo[j])
-            // }
             styles['results'] = results
             return styles
           })
    })
 }
-
-
-// //async await version for line 98~127
-//   .then( async data =>  {
-//     let styles = {product_id : productId};
-//     let results = [];
-
-//     for (let i = 0; i < data.length; i++){
-//       let styleInfo = {};
-
-//       styleInfo['style_id'] = data[i].dataValues.id
-//       styleInfo['name'] = data[i].dataValues.name
-//       styleInfo['original_price'] = data[i].dataValues.original_price
-//       styleInfo['sale_price'] = data[i].dataValues.sale_price
-//       styleInfo['default?'] = !!data[i].dataValues.default_style
-
-//       let photoData = await getPhotos(data[i].dataValues.id)
-//       styleInfo['photos'] = photoData
-
-//       let skusData = await getSkus(data[i].dataValues.id)
-//       styleInfo['skus'] = skusData
-
-//       results.push(styleInfo)
-//     }
-//     styles['results'] = results
-//     return styles
-//   })
-// }
 
 
 //get photos

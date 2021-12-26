@@ -12,7 +12,7 @@ const seq = new Sequelize(database, user, password, {
     logging: false
 });
 
-
+////create table for the first time
 // seq.authenticate()
 // .then(() => seq.sync())
 // .catch((error) => console.log(error));

@@ -21,7 +21,7 @@ Part of a team tasked with building scalable microservices that replaced the leg
 ## Project Accomplishments
 - Seeded a PostgreSQL database with over 7 million records
 - Optimized sequelize ORM query execution times to average < 1ms per query by hash indexing
-- Locally optimized to 1000 requests per second with <20 ms latency
+- Locally optimized to 1000 requests per second with <30 ms latency
 - Improved throughput to 10,000 requests per second with <50 ms latency and 0% error rate when deployed and horizontally scaled
 - Used total of five EC2 t2.micro instances:
   - One instance hosting Postgres database

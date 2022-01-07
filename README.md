@@ -1,5 +1,5 @@
 # E-Commerce Products Service
-Part of a team tasked with building scalable microservices that replaced the legacy monolithic API for an e-commerce platform to handle the increase in growing traffic. This is for the product section of the API and was stress tested using only EC2 t2.micro instances.
+Part of a team tasked with building scalable microservices that replaced the legacy monolithic API for an e-commerce platform to handle the increase in growing traffic. This is for the product section of the API and was stress tested using EC2 t2.micro instances.
 
 ## Build with
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
